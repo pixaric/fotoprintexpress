@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoPrint Express | Revelado, Fotos de Carnet, Restauración y Sublimación</title>
+    <meta name="description" content="Estudio de impresión profesional en FotoPrint Express. Revelado fotográfico en todos los tamaños, fotos de carnet al instante, restauración de fotos antiguas y sublimación de camisetas.">
+    <meta name="keywords" content="impresión digital, fotos carnet, revelar fotos, sublimación camisetas, restauración fotos antiguas, FotoPrint Express">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="FotoPrint Express | Impresión y Sublimación Profesional">
+    <meta property="og:description" content="Tus recuerdos impresos con la máxima calidad. Revelado, fotos de carnet, restauración y camisetas personalizadas.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-cyan-400 selection:text-slate-900">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-xs transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-2xl bg-slate-900 flex items-center justify-center text-white font-black shadow-md group-hover:scale-105 transition-transform relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-cyan-400 via-pink-500 to-yellow-400 opacity-20"></div>
+                    <span class="text-cyan-400">F</span><span class="text-pink-500">P</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900 leading-none">Foto<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500">Print</span></span>
+                    <span class="text-[10px] tracking-[0.25em] uppercase font-bold text-slate-400 mt-1">Express</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#servicios" class="hover:text-cyan-500 transition-colors">Servicios</a>
+                <a href="#precios" class="hover:text-cyan-500 transition-colors">Lista de Precios</a>
+                <a href="#calculadora" class="hover:text-cyan-500 transition-colors">Carrito / Presupuesto</a>
+                <a href="#contacto" class="hover:text-cyan-500 transition-colors">Contacto</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="#calculadora" class="bg-slate-900 hover:bg-cyan-500 text-white px-4 py-2.5 rounded-xl font-semibold text-xs shadow-sm transition-all flex items-center gap-1.5">
+                    <span>🛒</span> <span>Tienda</span>
+                </a>
+                <a href="https://wa.me/34684792506" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl font-semibold text-xs shadow-sm transition-all flex items-center gap-1.5">
+                    <span>💬</span> <span class="hidden sm:inline">WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-white via-slate-50 to-slate-100">
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 -right-32 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 left-1/3 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-yellow-300/30 border border-yellow-300 text-slate-900 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                        <span>📸</span> Estudio Fotográfico e Impresión Digital
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.1]">
+                        Tus recuerdos impresos con <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-pink-500 to-amber-500">calidad profesional</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 font-normal">
+                        Fotos de carnet al instante, revelado en todos los tamaños, restauración de fotos antiguas y sublimación de camisetas y artículos personalizados.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#calculadora" class="w-full sm:w-auto bg-slate-900 hover:bg-cyan-500 text-white px-8 py-4 rounded-xl font-bold shadow-md transition-all text-center">
+                            Armar Carrito de Pedido
+                        </a>
+                        <a href="#precios" class="w-full sm:w-auto bg-white hover:bg-slate-100 border-2 border-slate-200 text-slate-800 px-8 py-3.5 rounded-xl font-bold transition-all text-center">
+                            Ver Lista de Precios
+                        </a>
+                    </div>
+                    
+                    <div class="pt-4 flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 font-medium">
+                        <div class="flex items-center gap-1.5"><span>⚡</span> Pedidos rápidos por WhatsApp</div>
+                        <div class="flex items-center gap-1.5"><span>🚚</span> Envío a domicilio incluido (2€)</div>
+                    </div>
+                </div>
+
+                <div class="relative flex justify-center">
+                    <div class="w-full max-w-md bg-white p-6 rounded-3xl shadow-2xl border border-slate-100 animate-float">
+                        <div class="aspect-video rounded-2xl bg-gradient-to-br from-cyan-400 via-pink-500 to-yellow-400 p-1 flex items-center justify-center">
+                            <div class="w-full h-full bg-slate-900 rounded-xl flex flex-col items-center justify-center p-6 text-center text-white relative overflow-hidden">
+                                <div class="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:12px_12px] opacity-10"></div>
+                                <span class="text-5xl mb-2">🖨️</span>
+                                <h3 class="font-bold text-xl text-white">FotoPrint Express</h3>
+                                <p class="text-xs text-cyan-300 mt-1 font-medium">Pedido mín: 5€ | Envío: 2€</p>
+                            </div>
+                        </div>
+                        <div class="mt-5 grid grid-cols-3 gap-3 text-center">
+                            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <span class="block text-lg font-bold text-slate-900">10x15</span>
+                                <span class="text-[10px] text-slate-500 uppercase">0.25€/ud</span>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <span class="block text-lg font-bold text-pink-500">Carnet</span>
+                                <span class="text-[10px] text-slate-500 uppercase">6.00€ pack</span>
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                <span class="block text-lg font-bold text-cyan-500">Textil</span>
+                                <span class="text-[10px] text-slate-500 uppercase">12.00€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+                    Nuestros <span class="text-cyan-500">Servicios</span> de Impresión
+                </h2>
+                <p class="mt-4 text-lg text-slate-600">
+                    Soluciones integrales de fotografía y personalización adaptadas a lo que necesitas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-3xl border-2 border-slate-100 hover:border-cyan-400 bg-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-cyan-500 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-colors">
+                            🖼️
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Fotos en Diferentes Tamaños</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Revelado digital y analógico en medidas estándar (10x15, 13x18, 15x20) y ampliaciones póster con acabados brillo o mate.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-100">
+                        <a href="#precios" class="text-xs font-bold uppercase tracking-wider text-cyan-600 group-hover:text-cyan-700 flex items-center gap-1">
+                            Ver tarifas &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl border-2 border-slate-100 hover:border-pink-500 bg-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-pink-50 text-pink-500 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-pink-500 group-hover:text-white transition-colors">
+                            🆔
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Fotos de Carnet Instantáneas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Fotografía oficial para DNI, pasaporte, carnet de conducir o currículum. ¡Listas en menos de 5 minutos y cumpliendo normativas!
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-100">
+                        <a href="#precios" class="text-xs font-bold uppercase tracking-wider text-pink-600 group-hover:text-pink-700 flex items-center gap-1">
+                            Ver tarifas &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl border-2 border-slate-100 hover:border-amber-400 bg-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-500 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-amber-400 group-hover:text-slate-900 transition-colors">
+                            ✨
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Restauración de Fotos Antiguas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Recuperamos fotografías rotas, manchadas o desgastadas por el tiempo devolviéndoles su color, textura y nitidez original.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-100">
+                        <a href="#precios" class="text-xs font-bold uppercase tracking-wider text-amber-600 group-hover:text-amber-700 flex items-center gap-1">
+                            Ver tarifas &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl border-2 border-slate-100 hover:border-cyan-400 bg-white shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-500 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                            👕
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Sublimación de Camisetas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Personaliza camisetas, tazas, cojines y accesorios con tus diseños únicos, fotos favoritas o logotipos corporativos.
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-100">
+                        <a href="#precios" class="text-xs font-bold uppercase tracking-wider text-indigo-600 group-hover:text-indigo-700 flex items-center gap-1">
+                            Ver tarifas &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-cyan-600 text-xs font-bold uppercase tracking-widest bg-cyan-50 px-3.5 py-1.5 rounded-full border border-cyan-200">Tarifas Oficiales</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">Lista de Precios de Todos los Trabajos</h2>
+                <p class="text-slate-600 mt-2">Consulta nuestros precios detallados. Recuerde que el <strong>pedido mínimo es de 5€</strong> e incluye <strong>envío a domicilio por 2€</strong>.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-900 text-white text-xs uppercase tracking-wider">
+                                <th class="py-4 px-6 font-bold">Servicio / Categoría</th>
+                                <th class="py-4 px-6 font-bold">Descripción / Formato</th>
+                                <th class="py-4 px-6 font-bold text-right">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-sm">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 font-bold text-slate-900">Revelado 10x15 cm</td>
+                                <td class="py-4 px-6 text-slate-600">Papel fotográfico brillo o mate</td>
+                                <td class="py-4 px-6 font-bold text-cyan-600 text-right">0.25 € / ud</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 font-bold text-slate-900">Revelado 13x18 cm</td>
+                                <td class="py-4 px-6 text-slate-600">Papel fotográfico calidad superior</td>
+                                <td class="py-4 px-6 font-bold text-cyan-600 text-right">0.50 € / ud</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 font-bold text-slate-900">Revelado 15x20 cm</td>
+                                <td class="py-4 px-6 text-slate-600">Formato mediano gran nitidez</td>
+                                <td class="py-4 px-6 font-bold text-cyan-600 text-right">0.90 € / ud</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 font-bold text-slate-900">Ampliación 20x30 cm</td>
+                                <td class="py-4 px-6 text-slate-600">Tamaño póster / cuadro</td>
+                                <td class="py-4 px-6 font-bold text-cyan-600 text-right">3.50 € / ud</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 font-bold text-slate-900">Fotos de Carnet</td>
+                                <td class="py-4 px-6 text-slate-600">Pack de 6 unidades (DNI, pasaporte, carnet)</td>
+                                <td class="py-4 px-6 font-bold text-pink-600 text-right">6.00 € / pack</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 font-bold text-slate-900">Restauración de Foto Antigua</td>
+                                <td class="py-4 px-6 text-slate-600">Corrección de roturas, manchas y color (Básico)</td>
+                                <td class="py-4 px-6 font-bold text-amber-600 text-right">Desde 15.00 €</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 font-bold text-slate-900">Sublimación de Camiseta</td>
+                                <td class="py-4 px-6 text-slate-600">Camiseta personalizada con tu diseño o foto</td>
+                                <td class="py-4 px-6 font-bold text-indigo-600 text-right">12.00 € / ud</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 font-bold text-slate-900">Sublimación de Taza</td>
+                                <td class="py-4 px-6 text-slate-600">Taza cerámica blanca con impresión full color</td>
+                                <td class="py-4 px-6 font-bold text-indigo-600 text-right">8.00 € / ud</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bg-slate-50 p-4 border-t border-slate-200 text-xs text-slate-500 text-center flex flex-wrap justify-center gap-4">
+                    <span>⚠️ <strong>Condiciones:</strong> Pedido mínimo de compra: <strong>5.00 €</strong></span>
+                    <span>📦 <strong>Envío a domicilio incluido:</strong> <strong>2.00 €</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA TIPO CARRITO INTERACTIVO -->
+    <section id="calculadora" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest bg-cyan-950/80 px-3.5 py-1.5 rounded-full border border-cyan-800">Carrito de Pedido Interactivo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-4 tracking-tight">Selecciona y añade tus productos</h2>
+                <p class="text-slate-400 mt-2 text-sm">Añade los servicios que desees al carrito. El sistema incluye envío a domicilio por 2€ y comprueba el pedido mínimo de 5€.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Panel de Selección -->
+                <div class="lg:col-span-6 bg-slate-800/90 border border-slate-700 rounded-3xl p-6 shadow-2xl backdrop-blur-md space-y-5">
+                    <h3 class="text-lg font-bold text-white border-b border-slate-700 pb-3">1. Añadir servicio al carrito</h3>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">Servicio:</label>
+                        <select id="cart-service-select" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                            <option value="Revelado 10x15 cm" data-price="0.25">Revelado Foto 10x15 cm (0.25 €/ud)</option>
+                            <option value="Revelado 13x18 cm" data-price="0.50">Revelado Foto 13x18 cm (0.50 €/ud)</option>
+                            <option value="Revelado 15x20 cm" data-price="0.90">Revelado Foto 15x20 cm (0.90 €/ud)</option>
+                            <option value="Ampliación Póster 20x30 cm" data-price="3.50">Ampliación Póster 20x30 cm (3.50 €/ud)</option>
+                            <option value="Fotos de Carnet (Pack 6)" data-price="6.00">Fotos de Carnet - Pack 6 uds (6.00 €/pack)</option>
+                            <option value="Restauración de Foto Antigua" data-price="15.00">Restauración de Foto Antigua (15.00 €)</option>
+                            <option value="Sublimación de Camiseta" data-price="12.00">Sublimación de Camiseta (12.00 €/ud)</option>
+                            <option value="Sublimación de Taza" data-price="8.00">Sublimación de Taza (8.00 €/ud)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-300 mb-2">Cantidad:</label>
+                        <input type="number" id="cart-qty-input" min="1" value="1" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                    </div>
+
+                    <button type="button" onclick="addItemToCart()" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold py-3 px-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer">
+                        <span>➕ Añadir al Carrito</span>
+                    </button>
+                </div>
+
+                <!-- Panel de Resumen del Carrito -->
+                <div class="lg:col-span-6 bg-slate-800/90 border border-slate-700 rounded-3xl p-6 shadow-2xl backdrop-blur-md flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-white border-b border-slate-700 pb-3 mb-4">2. Resumen de tu Pedido</h3>
+                        
+                        <!-- Lista de Ítems del Carrito -->
+                        <div id="cart-items-container" class="space-y-3 max-h-48 overflow-y-auto pr-2 mb-4 text-sm">
+                            <p class="text-slate-400 italic text-center py-4">Tu carrito está vacío. Añade servicios a la izquierda.</p>
+                        </div>
+                    </div>
+
+                    <!-- Totales y Desglose Financiero -->
+                    <div class="mt-6 pt-4 border-t border-slate-700">
+                        <div id="min-order-status" class="text-xs font-bold px-3 py-1.5 rounded-lg mb-4 text-center">
+                            ⚠️ Pedido Mínimo de 5€ no alcanzado
+                        </div>
+                        
+                        <!-- Desglose detallado del pago -->
+                        <div class="space-y-2 mb-5 bg-slate-900/80 p-4 rounded-2xl border border-slate-700/60 text-sm">
+                            <div class="flex items-center justify-between text-slate-300">
+                                <span>Subtotal productos:</span>
+                                <span id="cart-subtotal-price" class="font-bold text-white">0.00 €</span>
+                            </div>
+                            <div id="min-order-adjustment-row" class="flex items-center justify-between text-amber-400 text-xs hidden">
+                                <span>Ajuste pedido mínimo (base 5€):</span>
+                                <span id="cart-adjustment-price" class="font-bold">+0.00 €</span>
+                            </div>
+                            <div class="flex items-center justify-between text-slate-300">
+                                <span>Envío a domicilio:</span>
+                                <span class="font-bold text-cyan-300">2.00 €</span>
+                            </div>
+                            <div class="border-t border-slate-700 pt-2 mt-2 flex items-center justify-between">
+                                <span class="text-base font-extrabold text-white">Total a Pagar:</span>
+                                <span id="cart-total-price" class="text-2xl font-black text-cyan-400">0.00 €</span>
+                            </div>
+                        </div>
+
+                        <a id="cart-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-cyan-500 to-pink-500 hover:opacity-95 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2 opacity-50 pointer-events-none">
+                            <span>🚀 Enviar Pedido por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-pink-600 text-xs font-bold uppercase tracking-widest bg-pink-50 px-3.5 py-1.5 rounded-full border border-pink-100">Estamos a tu disposición</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">¿Tienes dudas o necesitas un trabajo personalizado?</h2>
+                    <p class="text-slate-600 text-base">
+                        Escríbenos directamente a nuestro WhatsApp oficial para enviarnos tus fotos o coordinar los detalles de impresión de forma rápida.
+                    </p>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-center gap-3 text-slate-700">
+                            <span class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 font-bold">💬</span>
+                            <span class="font-bold text-slate-900">+34 684 79 25 06 (WhatsApp)</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700">
+                            <span class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 font-bold">📍</span>
+                            <span>Calle Principal 123, Local, Tu Ciudad</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-700">
+                            <span class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-900 font-bold">🕒</span>
+                            <span>Lunes a Viernes: 9:00 - 14:00 y 17:00 - 20:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl shadow-sm">
+                    <h3 class="text-xl font-bold text-slate-900 mb-6">Envíanos un mensaje rápido</h3>
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Nombre</label>
+                            <input type="text" id="form-name" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Teléfono o Correo</label>
+                            <input type="text" id="form-contact" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Tu contacto">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Mensaje / Servicio</label>
+                            <textarea id="form-msg" rows="4" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Cuéntanos qué necesitas imprimir..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-slate-900 hover:bg-cyan-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-md transition-all">
+                            Enviar Consulta por WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-xl bg-cyan-500 flex items-center justify-center text-slate-900 font-bold text-sm">FP</div>
+                <span class="text-white font-bold tracking-tight">FotoPrint Express</span>
+            </div>
+            <p class="text-xs text-center sm:text-left text-slate-500">
+                &copy; <span id="current-year"></span> FotoPrint Express. Todos los derechos reservados.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-400">
+                <button onclick="openLegalModal('privacidad')" class="hover:text-cyan-400 transition-colors cursor-pointer underline decoration-dotted">Protección de Datos (RGPD)</button>
+                <button onclick="openLegalModal('terminos')" class="hover:text-cyan-400 transition-colors cursor-pointer underline decoration-dotted">Términos y Condiciones</button>
+                <button onclick="openLegalModal('cookies')" class="hover:text-cyan-400 transition-colors cursor-pointer underline decoration-dotted">Política de Cookies</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DE INFORMACIÓN LEGAL Y PROTECCIÓN DE DATOS -->
+    <div id="legal-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden p-4">
+        <div class="bg-slate-900 border border-slate-700 text-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[85vh] flex flex-col">
+            <button onclick="closeLegalModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors cursor-pointer">&times;</button>
+            
+            <div id="modal-content-container" class="overflow-y-auto pr-2 space-y-4 text-sm text-slate-300 mt-2">
+                <!-- Contenido dinámico inyectado por JS -->
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-800 flex justify-end">
+                <button onclick="closeLegalModal()" class="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold px-6 py-2.5 rounded-xl transition-colors cursor-pointer">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LÓGICA DEL CARRITO E-COMMERCE Y LEGAL -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const legalTexts = {
+            privacidad: `
+                <h3 class="text-xl font-bold text-white mb-3">🔒 Protección de Datos y Privacidad (RGPD)</h3>
+                <p>En <strong>FotoPrint Express</strong> cumplimos estrictamente con el Reglamento General de Protección de Datos (RGPD) y la normativa vigente en materia de protección de datos personales.</p>
+                <h4 class="font-bold text-cyan-400 mt-3">1. ¿Qué datos recopilamos y para qué?</h4>
+                <p>Únicamente recopilamos los datos estrictamente necesarios (nombre, teléfono, dirección de envío y las fotografías o archivos encargados) para gestionar su pedido de revelado, sublimación o fotos de carnet, así como para realizar el envío a domicilio.</p>
+                <h4 class="font-bold text-cyan-400 mt-3">2. Confidencialidad de sus Fotografías</h4>
+                <p>Sus archivos fotográficos y diseños enviados son tratados con absoluta confidencialidad. <strong>No almacenamos ni compartimos sus imágenes personales</strong> con terceros, y son eliminadas de nuestros sistemas locales transcurridos 30 días desde la entrega del pedido.</p>
+                <h4 class="font-bold text-cyan-400 mt-3">3. Derechos del Cliente</h4>
+                <p>Usted puede ejercer en cualquier momento sus derechos de acceso, rectificación, supresión y portabilidad escribiendo a nuestro canal oficial de WhatsApp o contacto directo.</p>
+            `,
+            terminos: `
+                <h3 class="text-xl font-bold text-white mb-3">📄 Términos y Condiciones de Servicio</h3>
+                <p>Bienvenido a <strong>FotoPrint Express</strong>. Al realizar un pedido o consulta a través de nuestra web o WhatsApp, acepta las siguientes condiciones:</p>
+                <h4 class="font-bold text-cyan-400 mt-3">1. Pedido Mínimo y Envíos</h4>
+                <p>El importe mínimo de compra aplicable en nuestra tienda es de <strong>5.00 €</strong>. Todos los pedidos con entrega a domicilio llevan asociado un coste fijo de envío de <strong>2.00 €</strong>.</p>
+                <h4 class="font-bold text-cyan-400 mt-3">2. Tiempos de Entrega y Calidad</h4>
+                <p>Las fotos de carnet se realizan al instante en tienda física. Los trabajos de revelado y sublimación tienen un plazo estimado de preparación de 24 a 48 horas laborables. El cliente es responsable de garantizar que las imágenes aportadas cuenten con la resolución adecuada.</p>
+                <h4 class="font-bold text-cyan-400 mt-3">3. Devoluciones</h4>
+                <p>Al tratarse de productos personalizados e impresos bajo demanda expresa del cliente, no se admiten devoluciones salvo por defectos evidentes de fabricación o impresión.</p>
+            `,
+            cookies: `
+                <h3 class="text-xl font-bold text-white mb-3">🍪 Política de Cookies</h3>
+                <p>Este sitio web utiliza únicamente cookies técnicas esenciales para el funcionamiento de la interfaz, el almacenamiento temporal de su carrito de compras y la correcta visualización de los contenidos.</p>
+                <p class="mt-2">No utilizamos cookies de seguimiento publicitario invasivas ni compartimos perfiles de usuario con redes publicitarias de terceros.</p>
+            `
+        };
+
+        function openLegalModal(type) {
+            const modal = document.getElementById('legal-modal');
+            const container = document.getElementById('modal-content-container');
+            container.innerHTML = legalTexts[type] || '<p>Información no disponible.</p>';
+            modal.classList.remove('hidden');
+        }
+
+        function closeLegalModal() {
+            const modal = document.getElementById('legal-modal');
+            modal.classList.add('hidden');
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        document.getElementById('legal-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLegalModal();
+            }
+        });
+
+        let cart = [];
+
+        function addItemToCart() {
+            const select = document.getElementById('cart-service-select');
+            const qtyInput = document.getElementById('cart-qty-input');
+            
+            const serviceName = select.value;
+            const unitPrice = parseFloat(select.options[select.selectedIndex].getAttribute('data-price'));
+            const qty = Math.max(1, parseInt(qtyInput.value) || 1);
+
+            // Verificar si ya existe en el carrito para sumar o agregar nuevo
+            const existingItemIndex = cart.findIndex(item => item.name === serviceName);
+            if (existingItemIndex > -1) {
+                cart[existingItemIndex].qty += qty;
+            } else {
+                cart.push({ name: serviceName, price: unitPrice, qty: qty });
+            }
+
+            renderCart();
+        }
+
+        function removeItemFromCart(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        function renderCart() {
+            const container = document.getElementById('cart-items-container');
+            
+            if (cart.length === 0) {
+                container.innerHTML = `<p class="text-slate-400 italic text-center py-4">Tu carrito está vacío. Añade servicios a la izquierda.</p>`;
+                updateCartTotal();
+                return;
+            }
+
+            let html = '';
+            cart.forEach((item, index) => {
+                const subtotal = item.price * item.qty;
+                html += `
+                    <div class="flex items-center justify-between bg-slate-900/60 p-3 rounded-xl border border-slate-700/50">
+                        <div>
+                            <span class="font-bold text-white block">${item.name}</span>
+                            <span class="text-xs text-slate-400">${item.qty} uds x ${item.price.toFixed(2)}€ = <strong class="text-cyan-300">${subtotal.toFixed(2)}€</strong></span>
+                        </div>
+                        <button onclick="removeItemFromCart(${index})" class="text-red-400 hover:text-red-300 text-xs font-bold px-2 py-1 rounded bg-red-950/40 border border-red-900/50 cursor-pointer">🗑️ Eliminar</button>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+            updateCartTotal();
+        }
+
+        function updateCartTotal() {
+            const minOrderNotice = document.getElementById('min-order-status');
+            const subtotalPriceEl = document.getElementById('cart-subtotal-price');
+            const adjustmentRow = document.getElementById('min-order-adjustment-row');
+            const adjustmentPriceEl = document.getElementById('cart-adjustment-price');
+            const totalPriceEl = document.getElementById('cart-total-price');
+            const whatsappBtn = document.getElementById('cart-whatsapp-btn');
+
+            let productsSubtotal = 0;
+            cart.forEach(item => {
+                productsSubtotal += (item.price * item.qty);
+            });
+
+            let shippingCost = 2.00;
+            let isMinOrderMet = productsSubtotal >= 5.00;
+            let baseCharged = productsSubtotal;
+            let adjustmentAmount = 0;
+
+            if (cart.length === 0) {
+                minOrderStatus(false, 0);
+                subtotalPriceEl.textContent = "0.00 €";
+                adjustmentRow.classList.add('hidden');
+                totalPriceEl.textContent = "0.00 €";
+                whatsappBtn.classList.add('opacity-50', 'pointer-events-none');
+                whatsappBtn.href = "#";
+                return;
+            }
+
+            subtotalPriceEl.textContent = productsSubtotal.toFixed(2) + " €";
+
+            if (!isMinOrderMet) {
+                adjustmentAmount = 5.00 - productsSubtotal;
+                baseCharged = 5.00;
+                adjustmentRow.classList.remove('hidden');
+                adjustmentPriceEl.textContent = `+${adjustmentAmount.toFixed(2)} € (mín. 5€)`;
+                minOrderStatus(false, productsSubtotal);
+            } else {
+                adjustmentRow.classList.add('hidden');
+                minOrderStatus(true, productsSubtotal);
+            }
+
+            let finalTotal = baseCharged + shippingCost;
+            totalPriceEl.textContent = finalTotal.toFixed(2) + " €";
+            whatsappBtn.classList.remove('opacity-50', 'pointer-events-none');
+
+            // Construir mensaje detallado para WhatsApp
+            let msg = `Hola, quiero hacer un pedido en FotoPrint Express:%0A`;
+            cart.forEach(item => {
+                msg += `- ${item.name} (${item.qty} uds): ${(item.price * item.qty).toFixed(2)}€%0A`;
+            });
+            msg += `-------------------%0A`;
+            msg += `Subtotal productos: ${productsSubtotal.toFixed(2)}€%0A`;
+            if (!isMinOrderMet) {
+                msg += `Ajuste pedido mínimo: +${adjustmentAmount.toFixed(2)}€ (Base 5€)%0A`;
+            }
+            msg += `Envío a domicilio: 2.00€%0A`;
+            msg += `*Total a Pagar: ${finalTotal.toFixed(2)}€*`;
+
+            whatsappBtn.href = `https://wa.me/34684792506?text=${msg}`;
+        }
+
+        function minOrderStatus(met, subtotal) {
+            const el = document.getElementById('min-order-status');
+            if (cart.length === 0) {
+                el.style.display = 'none';
+                return;
+            }
+            el.style.display = 'block';
+            if (met) {
+                el.className = "text-xs font-bold px-3 py-1.5 rounded-lg mb-4 text-center bg-emerald-950 text-emerald-300 border border-emerald-800";
+                el.textContent = `✅ ¡Cumple el pedido mínimo de 5€!`;
+            } else {
+                el.className = "text-xs font-bold px-3 py-1.5 rounded-lg mb-4 text-center bg-amber-950 text-amber-300 border border-amber-800";
+                el.textContent = `⚠️ No alcanza el mínimo de 5€ (Subtotal actual: ${subtotal.toFixed(2)}€). Se ajustará a la base de 5.00€.`;
+            }
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const contact = document.getElementById('form-contact').value;
+            const msg = document.getElementById('form-msg').value;
+
+            const text = `Hola, mi nombre es ${name} (${contact}).%0A%0AConsulta:%0A${msg}`;
+            window.open(`https://wa.me/34684792506?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>

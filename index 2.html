@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>FotoPrint Express | Impresión Fotográfica, Carnet, Restauración y Sublimación en España</title>
+    <meta name="description" content="Estudio fotográfico profesional FotoPrint Express. Revelado y fotos en todos los tamaños hasta A3, fotos de carnet oficiales, restauración de fotos antiguas y sublimación textil de camisetas. ¡Pide por WhatsApp!">
+    <meta name="keywords" content="impresión fotográfica, fotos carnet express, restauración de fotos antiguas, sublimación camisetas, revelado online, foto print express, estudio fotográfico">
+    <meta name="author" content="FotoPrint Express">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.fotoprintexpress.com/">
+
+    <!-- Open Graph / SEO Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FotoPrint Express | Impresión Fotográfica, Carnet y Sublimación">
+    <meta property="og:description" content="Especialistas en impresión de fotos hasta A3, restauración digital, fotos de carnet y sublimación de camisetas y tazas. Pedidos rápidos por WhatsApp.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1200">
+    <meta property="og:url" content="https://www.fotoprintexpress.com/">
+
+    <!-- Schema.org Local Business Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "FotoPrint Express",
+      "image": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e",
+      "@id": "https://www.fotoprintexpress.com/",
+      "url": "https://www.fotoprintexpress.com/",
+      "telephone": "+34684792506",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Principal #123, Local 14",
+        "addressLocality": "Centro",
+        "postalCode": "28001",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.4168,
+        "longitude": -3.7038
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/"
+      ]
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts for custom Montserrat typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#111111',
+                            blue: '#0F52BA', // Vibrant sapphire blue from brand logo
+                            coral: '#FF4A4A', // Vibrant coral/red accent
+                            yellow: '#FFD700',
+                            purple: '#6B21A8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        .float-animation {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #0F52BA, #FF4A4A, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-blue selection:text-white overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo with custom font & new color palette -->
+                <a href="#inicio" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-xl p-1">
+                    <div class="w-12 h-12 bg-brand-blue rounded-xl flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-camera-retro" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black tracking-tight text-slate-900">FOTO<span class="text-brand-blue">PRINT</span></span>
+                        <span class="block text-xs font-bold tracking-widest text-brand-coral uppercase">EXPRESS</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Desktop -->
+                <nav class="hidden lg:flex items-center gap-8 font-semibold text-slate-700 text-sm">
+                    <a href="#inicio" class="hover:text-brand-blue transition-colors">Inicio</a>
+                    <a href="#servicios" class="hover:text-brand-blue transition-colors">Servicios</a>
+                    <a href="#precios" class="hover:text-brand-blue transition-colors">Precios</a>
+                    <a href="#galeria" class="hover:text-brand-blue transition-colors">Galería</a>
+                    <a href="#nosotros" class="hover:text-brand-blue transition-colors">¿Por qué elegirnos?</a>
+                    <a href="#contacto" class="hover:text-brand-blue transition-colors">Contacto</a>
+                </nav>
+
+                <!-- CTA Buttons: Tienda & Pedido Rápido -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://tu-tienda-online.com" target="_blank" rel="noopener" class="bg-slate-100 text-slate-800 px-4 py-2.5 rounded-full font-bold text-sm shadow-sm hover:bg-slate-200 transition-all flex items-center gap-2 border border-slate-200">
+                        <i class="fa-solid fa-store text-brand-blue"></i> Tienda
+                    </a>
+                    <a href="https://wa.me/34684792506?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20rápido%20en%20FotoPrint%20Express." target="_blank" rel="noopener" class="bg-gradient-to-r from-brand-blue to-brand-coral text-white px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-brand-blue/25 hover:opacity-95 hover:scale-105 transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i> Pedido Rápido
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" aria-label="Abrir menú de navegación" class="lg:hidden text-slate-700 text-2xl focus:outline-none p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-100 px-4 pt-4 pb-6 space-y-3 shadow-lg">
+            <a href="#inicio" class="block py-2 text-slate-700 font-semibold hover:text-brand-blue">Inicio</a>
+            <a href="#servicios" class="block py-2 text-slate-700 font-semibold hover:text-brand-blue">Servicios</a>
+            <a href="#precios" class="block py-2 text-slate-700 font-semibold hover:text-brand-blue">Precios</a>
+            <a href="#galeria" class="block py-2 text-slate-700 font-semibold hover:text-brand-blue">Galería</a>
+            <a href="#nosotros" class="block py-2 text-slate-700 font-semibold hover:text-brand-blue">¿Por qué elegirnos?</a>
+            <a href="#contacto" class="block py-2 text-slate-700 font-semibold hover:text-brand-blue">Contacto</a>
+            <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                <a href="https://tu-tienda-online.com" target="_blank" rel="noopener" class="w-full text-center bg-slate-100 text-slate-800 py-3 rounded-full font-bold shadow-sm border border-slate-200">
+                    <i class="fa-solid fa-store"></i> Ir a la Tienda
+                </a>
+                <a href="https://wa.me/34684792506?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20rápido%20en%20FotoPrint%20Express." target="_blank" rel="noopener" class="w-full text-center bg-gradient-to-r from-brand-blue to-brand-coral text-white py-3 rounded-full font-bold shadow-md">
+                    <i class="fa-brands fa-whatsapp"></i> Pedido Rápido WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-white to-slate-100 pt-16 pb-24">
+            <div class="absolute top-0 right-0 -z-10 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/4" aria-hidden="true"></div>
+            <div class="absolute bottom-0 left-0 -z-10 w-96 h-96 bg-brand-coral/10 rounded-full blur-3xl -translate-x-1/3 translate-y-1/4" aria-hidden="true"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue/10 text-brand-blue text-xs font-black uppercase tracking-wider">
+                            <i class="fa-solid fa-bolt text-brand-coral" aria-hidden="true"></i> Express & Calidad Garantizada
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+                            Tus Recuerdos, <br><span class="gradient-text">Impresos con Pasión</span>
+                        </h1>
+                        <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 font-medium">
+                            Transformamos tus momentos especiales en arte duradero. Impresiones fotográficas de alta calidad en todos los tamaños hasta A3, restauración experta, fotos de carnet y sublimación textil.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#precios" class="bg-brand-blue text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:bg-blue-700 hover:scale-105 transition-all flex items-center justify-center gap-3">
+                                Ver Precios y Medidas <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://wa.me/34684792506?text=¡Hola!%20Me%20gustaría%20hacer%20una%20consulta%20general." target="_blank" rel="noopener" class="border-2 border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-bold hover:border-brand-blue hover:text-brand-blue transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-emerald-600 text-lg" aria-hidden="true"></i> Hablar por WhatsApp
+                            </a>
+                        </div>
+                        <div class="pt-6 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm font-semibold text-slate-500">
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue" aria-hidden="true"></i> Entrega Rápida</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-coral" aria-hidden="true"></i> Papel Premium</div>
+                            <div class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue" aria-hidden="true"></i> Tel: 684 792 506</div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex justify-center">
+                        <div class="relative w-full max-w-md float-animation">
+                            <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-blue via-brand-coral to-brand-yellow opacity-30 blur-lg" aria-hidden="true"></div>
+                            <div class="relative bg-white p-6 rounded-3xl shadow-2xl border border-slate-100">
+                                <div class="rounded-2xl overflow-hidden bg-slate-900 aspect-video flex items-center justify-center relative">
+                                    <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=800" alt="Impresión fotográfica profesional en alta calidad" class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-500" loading="lazy">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                                        <div class="text-white">
+                                            <span class="text-xs bg-brand-coral px-2.5 py-1 rounded-md font-bold uppercase">Calidad Pro</span>
+                                            <h2 class="text-xl font-bold mt-1 text-white">Impresión de Alta Fidelidad</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 gap-3 mt-4 text-center">
+                                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                        <i class="fa-solid fa-images text-brand-blue text-xl mb-1" aria-hidden="true"></i>
+                                        <span class="block text-xs font-bold text-slate-700">Fotos a Medida</span>
+                                    </div>
+                                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                        <i class="fa-solid fa-wand-magic-sparkles text-brand-coral text-xl mb-1" aria-hidden="true"></i>
+                                        <span class="block text-xs font-bold text-slate-700">Restauración</span>
+                                    </div>
+                                    <div class="bg-slate-50 p-3 rounded-xl border border-slate-100">
+                                        <i class="fa-solid fa-shirt text-brand-blue text-xl mb-1" aria-hidden="true"></i>
+                                        <span class="block text-xs font-bold text-slate-700">Sublimación</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-24 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-coral font-bold uppercase tracking-wider text-sm">Nuestros Trabajos</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Soluciones de Impresión Integral</h2>
+                    <p class="text-slate-600 mt-4 font-medium">Descubre todo lo que podemos hacer por ti con la más alta tecnología en impresión y diseño.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service 1 -->
+                    <article class="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-photo-film" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Impresiones Fotográficas</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Revelado en todos los tamaños estándar y grandes formatos (desde 10x15 cm hasta A3). Acabados mate o brillante de alta durabilidad.
+                            </p>
+                        </div>
+                        <a href="#precios" class="text-brand-blue font-bold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                            Ver Medidas y Precios <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-coral/10 rounded-2xl flex items-center justify-center text-brand-coral text-2xl mb-6 group-hover:bg-brand-coral group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Restauración de Fotos</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Devolvemos la vida a tus fotografías antiguas dañadas, rotas o descoloridas. Rescate profesional de recuerdos familiares invaluables.
+                            </p>
+                        </div>
+                        <a href="#precios" class="text-brand-coral font-bold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                            Ver Tarifas <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-blue/10 rounded-2xl flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-id-card" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Fotos de Carnet Express</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Fotografías oficiales al instante para DNI, pasaporte, visados y carnet de conducir. Cumplimiento garantizado con la normativa vigente.
+                            </p>
+                        </div>
+                        <a href="#precios" class="text-brand-blue font-bold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                            Ver Precios Carnet <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 bg-brand-coral/10 rounded-2xl flex items-center justify-center text-brand-coral text-2xl mb-6 group-hover:bg-brand-coral group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-shirt" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Sublimación Textil</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                                Personalización de camisetas, sudaderas y tazas con tus diseños exclusivos. Impresión duradera, colores vivos y alta definición.
+                            </p>
+                        </div>
+                        <a href="#precios" class="text-brand-coral font-bold text-sm flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                            Ver Precios Textil <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Table Section -->
+        <section id="precios" class="py-24 bg-gradient-to-b from-slate-100 to-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-blue font-bold uppercase tracking-wider text-sm">Tarifas Transparentes</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">Precios y Medidas Disponibles</h2>
+                    <p class="text-slate-600 mt-4 font-medium">Consulta nuestras tarifas oficiales para impresiones, fotos de carnet, restauración y sublimación. Haz clic en pedir para enviar tu solicitud directamente por WhatsApp.</p>
+                    
+                    <div class="mt-6 inline-flex flex-col sm:flex-row items-center gap-4 bg-blue-50 border border-blue-200 text-blue-900 px-6 py-3 rounded-2xl text-sm font-bold shadow-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-circle-exclamation text-brand-coral text-lg" aria-hidden="true"></i>
+                            <span><strong>Pedido mínimo:</strong> 5,00 €</span>
+                        </div>
+                        <span class="hidden sm:inline text-blue-300">|</span>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-truck text-brand-blue text-lg" aria-hidden="true"></i>
+                            <span><strong>Gastos de envío a domicilio:</strong> 2,00 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Table 1: Photo Sizes & Printing -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center text-xl font-bold">
+                                <i class="fa-solid fa-images" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Impresión Fotográfica (Papel Pro)</h3>
+                                <p class="text-xs text-slate-500 font-semibold">Acabado Brillante o Mate</p>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm text-slate-600 min-w-[320px]">
+                                <caption class="sr-only">Precios de impresión fotográfica por tamaño</caption>
+                                <thead class="bg-slate-50 text-slate-900 uppercase font-bold text-xs">
+                                    <tr>
+                                        <th scope="col" class="py-3 px-4 rounded-l-lg">Medida</th>
+                                        <th scope="col" class="py-3 px-4">Uso Habitual</th>
+                                        <th scope="col" class="py-3 px-4">Precio</th>
+                                        <th scope="col" class="py-3 px-4 rounded-r-lg text-center">Pedir</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">10 x 15 cm</td>
+                                        <td class="py-3 px-4">Estándar / Álbum</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-blue">0,35 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Impresión 10x15 cm - 0,35€')" aria-label="Pedir impresión 10x15 cm por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">13 x 18 cm</td>
+                                        <td class="py-3 px-4">Mediano / Retrato</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-blue">0,80 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Impresión 13x18 cm - 0,80€')" aria-label="Pedir impresión 13x18 cm por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">15 x 20 cm</td>
+                                        <td class="py-3 px-4">Ampliación Básica</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-blue">1,50 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Impresión 15x20 cm - 1,50€')" aria-label="Pedir impresión 15x20 cm por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">20 x 30 cm (A4)</td>
+                                        <td class="py-3 px-4">Diploma / Cuadro Pequeño</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-blue">3,50 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Impresión A4 / 20x30 cm - 3,50€')" aria-label="Pedir impresión A4 por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">30 x 42 cm (A3)</td>
+                                        <td class="py-3 px-4">Póster / Gran Formato</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-blue">7,00 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Impresión A3 / 30x42 cm - 7,00€')" aria-label="Pedir impresión A3 por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Table 2: Special Services -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-brand-coral/10 text-brand-coral rounded-xl flex items-center justify-center text-xl font-bold">
+                                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900">Servicios Especiales y Sublimación</h3>
+                                <p class="text-xs text-slate-500 font-semibold">Carnet, Restauración y Textil</p>
+                            </div>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm text-slate-600 min-w-[320px]">
+                                <caption class="sr-only">Precios de servicios especiales y sublimación</caption>
+                                <thead class="bg-slate-50 text-slate-900 uppercase font-bold text-xs">
+                                    <tr>
+                                        <th scope="col" class="py-3 px-4 rounded-l-lg">Servicio</th>
+                                        <th scope="col" class="py-3 px-4">Detalle / Incluye</th>
+                                        <th scope="col" class="py-3 px-4">Precio</th>
+                                        <th scope="col" class="py-3 px-4 rounded-r-lg text-center">Pedir</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">Fotos de Carnet</td>
+                                        <td class="py-3 px-4">Pack 6 u 8 fotos oficiales</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-coral">6,00 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Fotos de Carnet Express (Pack) - 6,00€')" aria-label="Pedir fotos de carnet por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">Restauración Básica</td>
+                                        <td class="py-3 px-4">Eliminación de manchas y roturas leves</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-coral">Desde 12 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Restauración de foto antigua (Básica) - Desde 12€')" aria-label="Pedir restauración básica por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">Restauración Avanzada</td>
+                                        <td class="py-3 px-4">Recuperación de rostros y colorización</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-coral">Desde 25 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Restauración de foto antigua (Avanzada) - Desde 25€')" aria-label="Pedir restauración avanzada por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">Sublimación Camiseta</td>
+                                        <td class="py-3 px-4">Camiseta incluida + estampa a color</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-coral">15,00 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Sublimación de Camiseta personalizada - 15,00€')" aria-label="Pedir camiseta sublimada por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="py-3 px-4 font-bold text-slate-900">Sublimación Taza</td>
+                                        <td class="py-3 px-4">Taza cerámica alta resistencia</td>
+                                        <td class="py-3 px-4 font-semibold text-brand-coral">9,00 €</td>
+                                        <td class="py-3 px-4 text-center">
+                                            <button onclick="pedirPorWp('Sublimación de Taza personalizada - 9,00€')" aria-label="Pedir taza sublimada por WhatsApp" class="bg-emerald-500 text-white w-9 h-9 rounded-lg hover:bg-emerald-600 transition-colors inline-flex items-center justify-center shadow-sm"><i class="fa-brands fa-whatsapp text-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before / After Showcase Section -->
+        <section id="galeria" class="py-24 bg-slate-900 text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]" aria-hidden="true"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-yellow font-bold uppercase tracking-wider text-sm">Resultados Reales</span>
+                    <h2 class="text-3xl sm:text-4xl font-black mt-2">Magia en Cada Detalle</h2>
+                    <p class="text-slate-400 mt-4 font-medium">Comprueba la calidad excepcional de nuestra restauración fotográfica y acabados textiles.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Restoration Showcase -->
+                    <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700 shadow-2xl">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-bold text-lg text-brand-blue">Restauración de Fotografía Antigua</h3>
+                            <span class="text-xs bg-slate-700 text-slate-300 px-3 py-1 rounded-full font-semibold">Antes / Después</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="relative rounded-xl overflow-hidden border border-slate-700">
+                                <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80&w=400" alt="Fotografía antigua original antes de ser restaurada" class="w-full h-48 object-cover filter sepia opacity-70" loading="lazy">
+                                <span class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-0.5 rounded font-bold">Original Dañada</span>
+                            </div>
+                            <div class="relative rounded-xl overflow-hidden border border-brand-blue">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400" alt="Fotografía restaurada digitalmente con calidad profesional" class="w-full h-48 object-cover" loading="lazy">
+                                <span class="absolute bottom-2 left-2 bg-brand-blue text-white font-bold text-xs px-2 py-0.5 rounded">Restaurada Pro</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm mt-4 font-medium">Rescatamos texturas, eliminamos manchas y devolvemos el color original con precisión digital avanzada.</p>
+                    </div>
+
+                    <!-- Sublimation Showcase -->
+                    <div class="bg-slate-800 p-6 rounded-3xl border border-slate-700 shadow-2xl">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-bold text-lg text-brand-coral">Sublimación de Camisetas y Regalos</h3>
+                            <span class="text-xs bg-slate-700 text-slate-300 px-3 py-1 rounded-full font-semibold">Alta Definición</span>
+                        </div>
+                        <div class="relative rounded-xl overflow-hidden border border-slate-700 h-48">
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=800" alt="Ejemplo de camiseta personalizada mediante sublimación textil" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-4">
+                                <div>
+                                    <span class="text-xs text-brand-yellow font-bold uppercase">Textil Premium</span>
+                                    <h4 class="font-bold text-white text-base">Colores Vibrantes que no se Desprenden</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm mt-4 font-medium">Estampación por calor integrada en la fibra de la prenda para máxima suavidad y resistencia al lavado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="nosotros" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-blue font-bold uppercase tracking-wider text-sm">Confianza y Excelencia</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2">¿Por qué Elegir FotoPrint Express?</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-center hover:shadow-lg transition-all">
+                        <div class="w-16 h-16 bg-brand-blue/10 text-brand-blue rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Rapidez y Eficiencia</h3>
+                        <p class="text-slate-600 text-sm font-medium">Tus fotos de carnet y pedidos exprés listos en cuestión de minutos sin esperas innecesarias.</p>
+                    </div>
+
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-center hover:shadow-lg transition-all">
+                        <div class="w-16 h-16 bg-brand-coral/10 text-brand-coral rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                            <i class="fa-solid fa-gem" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Calidad Garantizada</h3>
+                        <p class="text-slate-600 text-sm font-medium">Equipos de última generación y tintas originales que garantizan colores reales y duraderos.</p>
+                    </div>
+
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-center hover:shadow-lg transition-all">
+                        <div class="w-16 h-16 bg-brand-yellow/20 text-yellow-700 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
+                            <i class="fa-solid fa-tags" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Precios Competitivos</h3>
+                        <p class="text-slate-600 text-sm font-medium">La mejor relación calidad-precio del mercado en todos nuestros servicios de impresión y regalo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Form Section -->
+        <section id="contacto" class="py-24 bg-slate-100 border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <span class="text-brand-coral font-bold uppercase tracking-wider text-sm">Estamos para Ayudarte</span>
+                        <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Contáctanos o Envíanos tu Pedido</h2>
+                        <p class="text-slate-600 font-medium">Completa el formulario para enviar toda la información de lo que necesitas directamente a nuestro WhatsApp oficial <strong>684 792 506</strong>.</p>
+
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-brand-blue text-xl">
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 text-base">Ubicación</h3>
+                                    <p class="text-slate-600 text-sm font-medium">Calle Principal #123, Centro Comercial, Local 14</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-brand-coral text-xl">
+                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 text-base">Teléfono / WhatsApp Oficial</h3>
+                                    <p class="text-slate-600 text-sm font-bold text-emerald-600">+34 684 792 506</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-brand-blue text-xl">
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 text-base">Correo Electrónico</h3>
+                                    <p class="text-slate-600 text-sm font-medium">pedidos@fotoprintexpress.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-slate-200">
+                        <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div>
+                                <label for="form-nombre" class="block text-sm font-bold text-slate-700 mb-1">Nombre Completo</label>
+                                <input type="text" id="form-nombre" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none transition-all font-medium" placeholder="Ej. Ana Pérez">
+                            </div>
+                            <div>
+                                <label for="form-tel" class="block text-sm font-bold text-slate-700 mb-1">Teléfono de Contacto</label>
+                                <input type="tel" id="form-tel" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none transition-all font-medium" placeholder="Ej. 600000000">
+                            </div>
+                            <div>
+                                <label for="form-servicio" class="block text-sm font-bold text-slate-700 mb-1">Servicio de Interés</label>
+                                <select id="form-servicio" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none transition-all font-medium">
+                                    <option>Impresión Fotográfica (Hasta A3)</option>
+                                    <option>Restauración de Fotos Antiguas</option>
+                                    <option>Fotos de Carnet Express</option>
+                                    <option>Sublimación de Camisetas / Tazas</option>
+                                    <option>Otro / Consulta General</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="form-mensaje" class="block text-sm font-bold text-slate-700 mb-1">Detalles del Pedido (Medidas, cantidades, etc.)</label>
+                                <textarea id="form-mensaje" rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:outline-none transition-all font-medium" placeholder="Cuéntanos las cantidades, medidas exactas o detalles..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-4 rounded-xl font-bold shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Enviar Pedido por WhatsApp (+34 684 792 506)
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-slate-800 pb-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-brand-yellow font-bold text-xl shadow-md">
+                        <i class="fa-solid fa-camera-retro" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black text-white">FOTO<span class="text-brand-blue">PRINT</span></span>
+                        <span class="block text-xs font-bold tracking-widest text-slate-500 uppercase">Express Studio</span>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <span class="text-white font-semibold text-sm block">Atención Telefónica y WhatsApp</span>
+                    <a href="https://wa.me/34684792506" target="_blank" rel="noopener" class="text-emerald-400 font-bold text-lg hover:underline"><i class="fa-brands fa-whatsapp"></i> +34 684 792 506</a>
+                </div>
+                <div class="flex gap-4 text-xl">
+                    <a href="https://wa.me/34684792506" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-brand-blue hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-brand-coral hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-brand-blue hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Data Protection & Legal Info -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-slate-500 leading-relaxed bg-slate-950/50 p-6 rounded-2xl border border-slate-800">
+                <div>
+                    <h4 class="font-bold text-slate-300 uppercase tracking-wider mb-2"><i class="fa-solid fa-shield-halved text-brand-blue" aria-hidden="true"></i> Protección de Datos (RGPD)</h4>
+                    <p>En cumplimiento de la normativa vigente en materia de protección de datos, le informamos que los datos facilitados a través de nuestros formularios o canales de contacto serán tratados exclusivamente por FotoPrint Express para la gestión de sus pedidos, presupuestos y atención al cliente. Sus datos no serán cedidos a terceros salvo obligación legal.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-300 uppercase tracking-wider mb-2"><i class="fa-solid fa-lock text-brand-coral" aria-hidden="true"></i> Tratamiento de Fotografías e Imágenes</h4>
+                    <p>Las imágenes y archivos fotográficos aportados por el cliente para impresión o restauración son tratados bajo estricta confidencialidad. Una vez completado el servicio y transcurrido el plazo de entrega, los archivos digitales son eliminados de nuestros sistemas de trabajo temporales.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 text-xs text-slate-500">
+                <p>© 2026 FotoPrint Express. Todos los derechos reservados. Calle Principal #123, Local 14.</p>
+                <div class="flex gap-6">
+                    <a href="#contacto" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="#contacto" class="hover:text-white transition-colors">Política de Privacidad</a>
+                    <a href="#contacto" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Menu & WhatsApp Integration -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Función para abrir WhatsApp desde los botones de la tabla de precios
+        function pedirPorWp(detalleServicio) {
+            const numeroWp = "34684792506";
+            const texto = `¡Hola! Me interesa el siguiente servicio de FotoPrint Express:%0A- *${detalleServicio}*%0A%0A¿Podrían darme más detalles o indicarme cómo proceder?`;
+            window.open(`https://wa.me/${numeroWp}?text=${texto}`, '_blank');
+        }
+
+        // Función para enviar los datos detallados del formulario a WhatsApp
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('form-nombre').value;
+            const tel = document.getElementById('form-tel').value;
+            const servicio = document.getElementById('form-servicio').value;
+            const mensaje = document.getElementById('form-mensaje').value;
+
+            const numeroWp = "34684792506";
+            const textoWp = `*NUEVO PEDIDO / CONSULTA WEB*%0A%0A*Cliente:* ${nombre}%0A*Teléfono:* ${tel}%0A*Servicio:* ${servicio}%0A*Detalles:* ${mensaje}`;
+            
+            window.open(`https://wa.me/${numeroWp}?text=${encodeURIComponent(textoWp)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
