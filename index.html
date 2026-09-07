@@ -221,8 +221,71 @@
                 <p class="text-slate-600 mt-2">Consulta nuestros precios detallados. Recuerde que el <strong>pedido mínimo es de 5€</strong> e incluye <strong>envío a domicilio por 2€</strong>.</p>
             </div>
 
+            <!-- Contenedor responsive: Tarjetas en móvil / Tabla en desktop -->
             <div class="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden">
-                <div class="overflow-x-auto">
+                
+                <!-- Versión Móvil (Tarjetas apiladas para evitar desbordamiento horizontal) -->
+                <div class="block md:hidden divide-y divide-slate-100">
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <span class="font-extrabold text-slate-900 block text-base">Revelado 10x15 cm</span>
+                            <span class="text-xs text-slate-500">Papel fotográfico brillo o mate</span>
+                        </div>
+                        <span class="font-black text-cyan-600 text-base shrink-0">0.25 € / ud</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <span class="font-extrabold text-slate-900 block text-base">Revelado 13x18 cm</span>
+                            <span class="text-xs text-slate-500">Papel fotográfico calidad superior</span>
+                        </div>
+                        <span class="font-black text-cyan-600 text-base shrink-0">0.50 € / ud</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <span class="font-extrabold text-slate-900 block text-base">Revelado 15x20 cm</span>
+                            <span class="text-xs text-slate-500">Formato mediano gran nitidez</span>
+                        </div>
+                        <span class="font-black text-cyan-600 text-base shrink-0">0.90 € / ud</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <span class="font-extrabold text-slate-900 block text-base">Ampliación 20x30 cm</span>
+                            <span class="text-xs text-slate-500">Tamaño póster / cuadro</span>
+                        </div>
+                        <span class="font-black text-cyan-600 text-base shrink-0">3.50 € / ud</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <span class="font-extrabold text-slate-900 block text-base">Fotos de Carnet</span>
+                            <span class="text-xs text-slate-500">Pack de 6 unidades (DNI, pasaporte, carnet)</span>
+                        </div>
+                        <span class="font-black text-pink-600 text-base shrink-0">6.00 € / pack</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <span class="font-extrabold text-slate-900 block text-base">Restauración de Foto Antigua</span>
+                            <span class="text-xs text-slate-500">Corrección de roturas, manchas y color (Básico)</span>
+                        </div>
+                        <span class="font-black text-amber-600 text-base shrink-0">Desde 15.00 €</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <span class="font-extrabold text-slate-900 block text-base">Sublimación de Camiseta</span>
+                            <span class="text-xs text-slate-500">Camiseta personalizada con tu diseño o foto</span>
+                        </div>
+                        <span class="font-black text-indigo-600 text-base shrink-0">12.00 € / ud</span>
+                    </div>
+                    <div class="p-5 flex items-center justify-between gap-4">
+                        <div>
+                            <span class="font-extrabold text-slate-900 block text-base">Sublimación de Taza</span>
+                            <span class="text-xs text-slate-500">Taza cerámica blanca con impresión full color</span>
+                        </div>
+                        <span class="font-black text-indigo-600 text-base shrink-0">8.00 € / ud</span>
+                    </div>
+                </div>
+
+                <!-- Versión Desktop (Tabla clásica) -->
+                <div class="hidden md:block overflow-x-auto">
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-slate-900 text-white text-xs uppercase tracking-wider">
@@ -275,6 +338,7 @@
                         </tbody>
                     </table>
                 </div>
+
                 <div class="bg-slate-50 p-4 border-t border-slate-200 text-xs text-slate-500 text-center flex flex-wrap justify-center gap-4">
                     <span>⚠️ <strong>Condiciones:</strong> Pedido mínimo de compra: <strong>5.00 €</strong></span>
                     <span>📦 <strong>Envío a domicilio incluido:</strong> <strong>2.00 €</strong></span>
