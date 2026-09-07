@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>FotoPrint Express | Impresión fotográfica profesional en Granadilla</title>
+  <meta name="description" content="Impresión de fotos en diferentes tamaños, restauración de fotos antiguas, fotos de carnet y sublimación de camisetas en Granadilla de Abona. Calidad profesional y atención cercana.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="impresión de fotos, restauración fotos antiguas, foto carnet, sublimación camisetas, Granadilla de Abona, Canarias">
+  <link rel="canonical" href="https://www.fotoprint-express.com/">
+  <!-- Tipografía y estilos base -->
+  <style>
+    :root {
+      --c-cyan: #00bcd4;
+      --c-magenta: #e91e63;
+      --c-yellow: #ffc107;
+      --c-black: #222222;
+      --bg-light: #f7f7f7;
+      --bg-white: #ffffff;
+      --accent: var(--c-magenta);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg-light);
+      color: #333;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--accent); text-decoration: none; }
+    .wrapper { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
+    header { background: var(--bg-white); box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: sticky; top: 0; z-index: 20; }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      max-width: 1200px; margin: 0 auto; padding: 0.75rem 1.5rem;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .logo-icon {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, var(--c-cyan), var(--c-magenta), var(--c-yellow), var(--c-black));
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .logo-icon::before {
+      content: "";
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+    .logo-text-main { font-weight: 700; letter-spacing: 0.04em; font-size: 1.05rem; }
+    .logo-text-main span:nth-child(1) { color: var(--c-black); }
+    .logo-text-main span:nth-child(2) {
+      background: linear-gradient(90deg, var(--c-cyan), var(--c-magenta), var(--c-yellow));
+      -webkit-background-clip: text; color: transparent;
+    }
+    .logo-text-sub { font-size: 0.75rem; color: #777; text-transform: uppercase; }
+    .nav-links {
+      display: flex; gap: 1rem; font-size: 0.9rem;
+    }
+    .nav-links a { position: relative; padding-bottom: 0.15rem; }
+    .nav-links a::after {
+      content: ""; position: absolute; left: 0; bottom: 0;
+      width: 0; height: 2px;
+      background: linear-gradient(90deg, var(--c-cyan), var(--c-magenta), var(--c-yellow));
+      transition: width 0.25s ease;
+    }
+    .nav-links a:hover::after { width: 100%; }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+      padding: 2.5rem 1.5rem 2rem;
+    }
+    .hero-text h1 {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      margin-bottom: 0.75rem;
+    }
+    .hero-text h1 span {
+      background: linear-gradient(90deg, var(--c-cyan), var(--c-magenta), var(--c-yellow));
+      -webkit-background-clip: text; color: transparent;
+    }
+    .hero-text p {
+      font-size: 0.98rem;
+      color: #555;
+      margin-bottom: 1.25rem;
+    }
+    .hero-badges {
+      display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;
+    }
+    .badge {
+      font-size: 0.8rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .badge span {
+      width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 0.35rem;
+    }
+    .badge.cyan span { background: var(--c-cyan); }
+    .badge.magenta span { background: var(--c-magenta); }
+    .badge.yellow span { background: var(--c-yellow); }
+    .badge.black span { background: var(--c-black); }
+    .hero-cta {
+      display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--c-cyan), var(--c-magenta));
+      color: #fff;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      border: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+    }
+    .btn-secondary {
+      background: transparent;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.12);
+      padding: 0.6rem 1.2rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-secondary span.icon {
+      width: 16px; height: 16px;
+      border-radius: 4px;
+      background: linear-gradient(135deg, var(--c-yellow), var(--c-magenta));
+    }
+    .hero-media {
+      position: relative;
+      padding: 1.5rem;
+    }
+    .hero-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+      padding: 1.25rem;
+      position: relative;
+      overflow: hidden;
+      animation: floatCard 6s ease-in-out infinite;
+    }
+    @keyframes floatCard {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .hero-card-header {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;
+    }
+    .hero-card-header h2 {
+      font-size: 0.95rem;
+    }
+    .hero-card-header span.tag {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(0,0,0,0.04);
+    }
+    .hero-card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+      font-size: 0.8rem;
+    }
+    .hero-card-item {
+      padding: 0.5rem;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+    .hero-card-item strong { display: block; margin-bottom: 0.15rem; }
+    .hero-card-footer {
+      margin-top: 0.8rem;
+      font-size: 0.75rem;
+      color: #777;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .hero-card-footer span.dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--c-cyan), var(--c-magenta), var(--c-yellow));
+    }
+
+    /* Secciones */
+    section { padding: 2.5rem 1.5rem; }
+    .section-title {
+      text-align: center;
+      margin-bottom: 1.75rem;
+    }
+    .section-title h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.4rem;
+    }
+    .section-title p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Servicios */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .service-card::after {
+      content: "";
+      position: absolute;
+      right: -40px; bottom: -40px;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle at 30% 30%, var(--c-cyan), var(--c-magenta), var(--c-yellow));
+      opacity: 0.12;
+      transform: translate3d(0,0,0);
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.12);
+    }
+    .service-icon {
+      width: 32px; height: 32px;
+      border-radius: 10px;
+      background: #f0f0f0;
+      margin-bottom: 0.6rem;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+    }
+    .service-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.35rem;
+    }
+    .service-card p {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 0.6rem;
+    }
+    .service-meta {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    /* Tamaños de fotos */
+    .sizes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .size-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 0.9rem;
+      border: 1px solid rgba(0,0,0,0.06);
+      font-size: 0.85rem;
+    }
+    .size-card strong { display: block; margin-bottom: 0.25rem; }
+    .size-tags {
+      display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.4rem;
+    }
+    .size-tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      background: #f5f5f5;
+    }
+
+    /* Restauración */
+    .restore-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .restore-text p { font-size: 0.9rem; color: #555; margin-bottom: 0.8rem; }
+    .restore-steps {
+      font-size: 0.85rem;
+      list-style: none;
+    }
+    .restore-steps li { margin-bottom: 0.4rem; position: relative; padding-left: 1.1rem; }
+    .restore-steps li::before {
+      content: "•";
+      position: absolute; left: 0; top: 0;
+      color: var(--accent);
+    }
+    .restore-photo {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+      font-size: 0.8rem;
+    }
+    .restore-photo h3 { margin-bottom: 0.4rem; }
+    .restore-photo-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+    }
+    .restore-photo-block {
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 0.6rem;
+    }
+    .restore-photo-block strong { display: block; margin-bottom: 0.2rem; }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, var(--c-cyan), var(--c-magenta));
+      color: #fff;
+      border-radius: 18px;
+      padding: 1.8rem 1.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .cta h2 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .cta p { font-size: 0.9rem; margin-bottom: 1rem; }
+    .cta-actions {
+      display: flex; flex-wrap: wrap; gap: 0.75rem;
+    }
+    .cta-contact {
+      font-size: 0.85rem;
+    }
+    .cta-contact strong { display: block; margin-bottom: 0.25rem; }
+
+    /* Contacto */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+    .contact-info p { font-size: 0.9rem; margin-bottom: 0.4rem; }
+    .contact-info strong { color: var(--c-black); }
+    .contact-hours {
+      font-size: 0.85rem;
+      margin-top: 0.6rem;
+    }
+    .contact-hours span {
+      display: block;
+    }
+    .contact-form {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      font-size: 0.85rem;
+    }
+    .form-row { margin-bottom: 0.7rem; }
+    .form-row label { display: block; margin-bottom: 0.25rem; }
+    .form-row input,
+    .form-row textarea {
+      width: 100%;
+      padding: 0.45rem 0.55rem;
+      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,0.12);
+      font-size: 0.85rem;
+      font-family: inherit;
+    }
+    .form-row textarea { min-height: 80px; resize: vertical; }
+
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+    }
+    footer .stripe {
+      width: 100%;
+      height: 4px;
+      margin-bottom: 0.8rem;
+      background: linear-gradient(90deg, var(--c-cyan), var(--c-magenta), var(--c-yellow), var(--c-black));
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero, .restore-layout, .cta, .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero { padding-top: 1.5rem; }
+      header { position: static; }
+      .nav { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+      .cta { text-align: left; }
+    }
+    @media (max-width: 600px) {
+      .wrapper { padding: 1rem; }
+      section { padding: 2rem 1rem; }
+      .nav-links { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo">
+      <div class="logo-icon"></div>
+      <div>
+        <div class="logo-text-main">
+          <span>Foto</span><span>Print</span> <span style="color: var(--c-black);">Express</span>
+        </div>
+        <div class="logo-text-sub">Impresión fotográfica profesional</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#tamanyos">Tamaños de fotos</a>
+      <a href="#restauracion">Restauración</a>
+      <a href="#sublimacion">Sublimación</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrapper">
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-text">
+      <h1>Impresión que <span>da vida</span> a tus recuerdos.</h1>
+      <p>
+        En FotoPrint Express transformamos tus fotos, documentos y recuerdos en piezas que se sienten:
+        desde copias rápidas hasta restauraciones de fotos antiguas y camisetas personalizadas por sublimación.
+      </p>
+
+<!-- LOGO TIPOGRÁFICO FOTO PRINT EXPRESS -->
+<div class="fpe-logo">
+  <span class="fpe-foto">Foto</span>
+  <span class="fpe-print">Print</span>
+  <span class="fpe-express">Express</span>
+</div>
+
+<style>
+  .fpe-logo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: 0.03em;
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+  }
+
+  .fpe-foto {
+    color: #222; /* Negro elegante */
+  }
+
+  .fpe-print {
+    background: linear-gradient(90deg, #00bcd4, #e91e63, #ffc107);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .fpe-express {
+    color: #555; /* Gris profesional */
+    font-weight: 600;
+  }
+</style>
+
+
+      <div class="hero-badges">
+        <div class="badge cyan"><span></span>Impresión fotográfica profesional</div>
+        <div class="badge magenta"><span></span>Restauración de fotos antiguas</div>
+        <div class="badge yellow"><span></span>Foto carnet al momento</div>
+        <div class="badge black"><span></span>Sublimación de camisetas</div>
+      </div>
+      <div class="hero-cta">
+        <button class="btn-primary">
+          Reserva tu impresión hoy
+        </button>
+        <button class="btn-secondary">
+          <span class="icon"></span>
+          Ver ejemplos de trabajos
+        </button>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <h2>Todo lo que necesitas, en un solo lugar.</h2>
+          <span class="tag">Granadilla de Abona</span>
+        </div>
+        <div class="hero-card-grid">
+          <div class="hero-card-item">
+            <strong>Impresión de fotos</strong>
+            Copias en tamaños estándar y ampliaciones en calidad profesional, listas para enmarcar.
+          </div>
+          <div class="hero-card-item">
+            <strong>Foto carnet</strong>
+            Fotos de carnet al momento, adaptadas a requisitos oficiales y listas para entregar.
+          </div>
+          <div class="hero-card-item">
+            <strong>Restauración</strong>
+            Recuperamos fotos antiguas dañadas, mejorando color, contraste y eliminando defectos.
+          </div>
+          <div class="hero-card-item">
+            <strong>Sublimación</strong>
+            Camisetas personalizadas con tus diseños, fotos o mensajes, resistentes y llenas de color.
+          </div>
+        </div>
+        <div class="hero-card-footer">
+          <span>Impresión rápida, trato cercano y resultados que sorprenden.</span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="section-title">
+      <h2>Servicios de FotoPrint Express</h2>
+      <p>Todo lo que hacemos está pensado para que tus imágenes se vean mejor de lo que imaginabas.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon">📸</div>
+        <h3>Impresión de fotos</h3>
+        <p>
+          Impresión de fotos en diferentes tamaños, desde 10×15 hasta ampliaciones grandes.
+          Utilizamos papeles fotográficos de alta calidad y tintas duraderas.
+        </p>
+        <div class="service-meta">
+          Ideal para álbumes, regalos, decoración y proyectos personales.
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">📄</div>
+        <h3>Impresión de documentos</h3>
+        <p>
+          Impresión de documentos en color y blanco y negro, con nitidez y contraste óptimos.
+          Perfecto para trabajos, presentaciones y material profesional.
+        </p>
+        <div class="service-meta">
+          Opciones de gramaje y acabado según tus necesidades.
+        </div>
+      </article>
+
+      <article class="service-card" id="restauracion">
+        <div class="service-icon">🧾</div>
+        <h3>Restauración de fotos antiguas</h3>
+        <p>
+          Digitalizamos y restauramos fotos antiguas dañadas, recuperando detalles, color y textura.
+          Ideal para conservar recuerdos familiares y momentos únicos.
+        </p>
+        <div class="service-meta">
+          Tratamiento cuidadoso, revisión contigo antes de la impresión final.
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🪪</div>
+        <h3>Foto carnet</h3>
+        <p>
+          Fotos de carnet al momento, con iluminación cuidada y recorte adaptado a normas oficiales.
+          Listas para entregar en pocos minutos.
+        </p>
+        <div class="service-meta">
+          Para DNI, pasaporte, permisos y otros documentos oficiales.
+        </div>
+      </article>
+
+      <article class="service-card" id="sublimacion">
+        <div class="service-icon">👕</div>
+        <h3>Sublimación de camisetas</h3>
+        <p>
+          Personalizamos camisetas con tus fotos, logos o diseños mediante sublimación.
+          Colores vivos, alta resistencia al lavado y tacto suave.
+        </p>
+        <div class="service-meta">
+          Ideal para regalos, eventos, equipos y marcas.
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TAMAÑOS DE FOTOS -->
+  <section id="tamanyos">
+    <div class="section-title">
+      <h2>Tamaños de fotos disponibles</h2>
+      <p>Elige el formato que mejor encaje con tu idea: desde copias pequeñas hasta grandes ampliaciones.</p>
+    </div>
+    <div class="sizes-grid">
+      <div class="size-card">
+        <strong>Formatos estándar</strong>
+        10×15, 13×18, 15×20 cm.
+        <div class="size-tags">
+          <span class="size-tag">Álbum</span>
+          <span class="size-tag">Recuerdos diarios</span>
+        </div>
+      </div>
+      <div class="size-card">
+        <strong>Formatos grandes</strong>
+        20×30, 30×40, 30×45 cm.
+        <div class="size-tags">
+          <span class="size-tag">Decoración</span>
+          <span class="size-tag">Regalos especiales</span>
+        </div>
+      </div>
+      <div class="size-card">
+        <strong>Foto carnet</strong>
+        Tamaños adaptados a requisitos oficiales.
+        <div class="size-tags">
+          <span class="size-tag">DNI</span>
+          <span class="size-tag">Pasaporte</span>
+        </div>
+      </div>
+      <div class="size-card">
+        <strong>Formatos personalizados</strong>
+        Consultanos para medidas especiales y proyectos a medida.
+        <div class="size-tags">
+          <span class="size-tag">Proyectos creativos</span>
+          <span class="size-tag">Empresas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESTAURACIÓN DETALLE -->
+  <section>
+    <div class="restore-layout">
+      <div class="restore-text">
+        <div class="section-title" style="text-align:left;margin-bottom:1rem;">
+          <h2>Restauración de fotos antiguas</h2>
+          <p>Porque hay recuerdos que merecen volver a verse como el primer día.</p>
+        </div>
+        <p>
+          Si tienes fotos antiguas dañadas, descoloridas o con marcas del tiempo, podemos restaurarlas
+          digitalmente y volver a imprimirlas con calidad profesional.
+        </p>
+        <ul class="restore-steps">
+          <li>Digitalización cuidadosa de la foto original.</li>
+          <li>Corrección de color, contraste y exposición.</li>
+          <li>Eliminación de manchas, rasgaduras y defectos visibles.</li>
+          <li>Revisión contigo antes de la impresión final.</li>
+        </ul>
+      </div>
+      <div class="restore-photo">
+        <h3>Antes y después, en tus manos.</h3>
+        <div class="restore-photo-columns">
+          <div class="restore-photo-block">
+            <strong>Antes</strong>
+            Foto con desgaste, colores apagados y marcas del tiempo.
+          </div>
+          <div class="restore-photo-block">
+            <strong>Después</strong>
+            Imagen limpia, con color recuperado y lista para enmarcar o regalar.
+          </div>
+        </div>
+        <p style="margin-top:0.6rem;">
+          Trae tus fotos antiguas a FotoPrint Express y te asesoramos sobre la mejor forma de recuperarlas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="cta">
+      <div>
+        <h2>¿Listo para dar forma a tus ideas?</h2>
+        <p>
+          Ven a FotoPrint Express y convierte tus fotos, documentos y diseños en algo tangible.
+          Te acompañamos en cada paso para que el resultado sea justo lo que tenías en mente.
+        </p>
+        <div class="cta-actions">
+          <button class="btn-primary">Quiero imprimir mis fotos</button>
+          <button class="btn-secondary">
+            <span class="icon"></span>
+            Pedir presupuesto personalizado
+          </button>
+        </div>
+      </div>
+      <div class="cta-contact">
+        <strong>FotoPrint Express – Granadilla de Abona</strong>
+        <span>Impresión fotográfica, restauración, foto carnet y sublimación de camisetas.</span>
+        <span style="margin-top:0.4rem;display:block;">
+          Teléfono: <a href="tel:+34999999999" style="color:#fff;text-decoration:underline;">+34 999 99 99 99</a><br>
+          Email: <a href="mailto:info@fotoprint-express.com" style="color:#fff;text-decoration:underline;">info@fotoprint-express.com</a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="section-title">
+      <h2>Contacto y horario</h2>
+      <p>Estamos en Granadilla de Abona, listos para imprimir tus ideas.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>Dirección:</strong> Granadilla de Abona, Islas Canarias, España.</p>
+        <p><strong>Teléfono:</strong> +34 999 99 99 99</p>
+        <p><strong>Email:</strong> info@fotoprint-express.com</p>
+        <div class="contact-hours">
+          <strong>Horario:</strong>
+          <span>Lunes a Viernes: 9:00 – 19:00</span>
+          <span>Sábado: 10:00 – 14:00</span>
+          <span>Domingo: Cerrado</span>
+        </div>
+        <p style="margin-top:0.6rem;font-size:0.85rem;">
+          También puedes escribirnos por WhatsApp o pasar directamente por el local con tus archivos o fotos.
+        </p>
+      </div>
+      <div class="contact-form">
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" placeholder="Tu nombre" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="tu@correo.com" />
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" placeholder="Cuéntanos qué quieres imprimir o restaurar..."></textarea>
+        </div>
+        <button class="btn-primary" style="margin-top:0.4rem;">Enviar consulta</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="stripe"></div>
+  <div>© FotoPrint Express – Impresión fotográfica profesional en Granadilla de Abona, Islas Canarias.</div>
+</footer>
+
+</body>
+</html>
